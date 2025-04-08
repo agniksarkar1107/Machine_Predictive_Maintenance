@@ -280,32 +280,4 @@ This predictive maintenance application uses a stacked ensemble of machine learn
 (XGBoost and Random Forest) to predict potential machine failures before they occur.
 The model analyzes various sensor readings and operational parameters to identify patterns
 that indicate a high risk of failure.
-""")
-
-# Sidebar with information
-with st.sidebar:
-    st.title("Information")
-    st.info("""
-    **Machine Types**:
-    - L: Low capacity
-    - M: Medium capacity
-    - H: High capacity
-    
-    **Parameter Ranges**:
-    - Air Temperature: 20-35°C
-    - Process Temperature: 30-45°C
-    - Rotational Speed: 1000-3000 rpm
-    - Torque: 3-77 Nm
-    - Tool Wear: 0-250 min
-    """)
-    
-    st.write("---")
-    st.subheader("Model Performance")
-    st.write("Stacked model accuracy: 99.55%")
-    
-    # Show sample images of model evaluation
-    try:
-        st.image("confusion_matrix_stacking_ensemble.png", caption="Confusion Matrix")
-        st.image("feature_importance.png", caption="Feature Importance")
-    except:
-        st.write("Model evaluation visualizations not available. Run the training script first.") 
+""") 
