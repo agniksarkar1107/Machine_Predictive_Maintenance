@@ -272,5 +272,4 @@ except Exception as e:
     st.error(f"Error loading models: {str(e)}")
     st.warning("Please ensure you have trained the models first by running train_model_stacking.py")
     
-# Footer
-st.markdown("---")
+
