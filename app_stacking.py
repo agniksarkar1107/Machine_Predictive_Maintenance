@@ -274,10 +274,3 @@ except Exception as e:
     
 # Footer
 st.markdown("---")
-st.markdown("#### About")
-st.markdown("""
-This predictive maintenance application uses a stacked ensemble of machine learning models 
-(XGBoost and Random Forest) to predict potential machine failures before they occur.
-The model analyzes various sensor readings and operational parameters to identify patterns
-that indicate a high risk of failure.
-""") 
